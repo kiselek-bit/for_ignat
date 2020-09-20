@@ -1,3 +1,54 @@
-.message {
+.wrapper {
+    display: flex;
+    background-color: aqua;
+}
 
+.message {
+    background-color: black;
+    width: 300px;
+    opacity: 0.7;
+    position: relative;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-left: 25px;
+}
+
+.message::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 86%;
+    width: 0;
+    height: 0;
+    border: 29px solid transparent;
+    border-right-color: black;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -14.5px;
+    margin-left: -29px;
+}
+
+.name {
+    color: darkslateblue;
+    padding: 10px;
+}
+
+.time {
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.message_data {
+    color: white;
+    padding: 10px;
+}
+
+.wrapper img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
 }

@@ -32,7 +32,7 @@ export const filterAffairs = (affairs: DefaultAffairsTypes, filter: string): any
     else if (filter === 'low')
         return affairs.filter(a => a.priority === filter); // need to fix
 }
-export const deleteAffair = (affairs: DefaultAffairsTypes, _id: number): any => { // need to fix any
+export const deleteAffair = (affairs: DefaultAffairsTypes, _id: number): DefaultAffairsTypes => { // need to fix any
         affairs = affairs.filter(a => a._id !== _id)
     return affairs;
 }

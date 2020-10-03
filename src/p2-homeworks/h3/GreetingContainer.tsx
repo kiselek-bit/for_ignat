@@ -22,15 +22,16 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         setError('')
     };
     const addUser = () => {
-        if (name.trim() !== '') {
-            name = name.trim()
-            addUserCallback(name)
-            alert(`Hello  ${name}!`); // need to fix
+        if (name.trim() === '') {
+            setError('Error')
             setName('')
-        } else {
-            setError('Erorr')
-            setName('')
+            return
         }
+        name = name.trim()
+        addUserCallback(name)
+        alert(`Hello  ${name}!`); // need to fix
+        setName('')
+
     };
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === "Enter" && name !== "") {

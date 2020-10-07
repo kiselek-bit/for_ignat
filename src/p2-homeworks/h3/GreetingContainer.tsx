@@ -35,10 +35,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     };
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === "Enter" && name !== "") {
-            name = name.trim()
-            addUserCallback(name)
-            alert(`Hello  ${name}!`); // need to fix
-            setName('')
+            addUser()
         } else {
             setError('Error')
         }

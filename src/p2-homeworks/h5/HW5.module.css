@@ -1,0 +1,6 @@
+.wrapper {
+    display: grid;
+    grid-template-areas:
+  'header'
+  'content';
+}

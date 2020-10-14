@@ -1,0 +1,17 @@
+.item .active {
+    color: gold;
+}
+
+.item {
+    padding-right: 30px;
+}
+.item a{
+    color: #0D293E;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}

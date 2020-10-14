@@ -1,0 +1,31 @@
+.mobile_nav_icon {
+    border-bottom: 10px double white;
+    border-top: 3px solid white;
+    cursor: pointer;
+    float: left;
+    height: 4px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-top: 4px;
+    transition: all 0.2s ease 0s;
+    width: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+    padding: 10px 35px;
+    background-color: #EF6357;
+}
+
+.logo{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
+}

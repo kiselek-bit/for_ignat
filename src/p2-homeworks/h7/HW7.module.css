@@ -1,0 +1,7 @@
+.wrapper {
+    display: flex;
+}
+
+.select {
+    min-width: 10%;
+}

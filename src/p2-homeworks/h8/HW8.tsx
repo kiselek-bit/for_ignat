@@ -29,9 +29,9 @@ function HW8() {
     ))
     console.log(people)
 
-    const sortUp = () => setPeople(homeWorkReducer(people, SortUpAC()))
-    const sortDown = () => setPeople(homeWorkReducer(people, SortDownAC()))
-    const checkAge = () => setPeople(homeWorkReducer(people, CheckAgeAC()))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, SortUpAC()))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, SortDownAC()))
+    const checkAge = () => setPeople(homeWorkReducer(initialPeople, CheckAgeAC()))
 
     return (
         <div>

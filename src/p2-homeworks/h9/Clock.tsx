@@ -1,5 +1,6 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useMemo, useState} from "react";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import styles from './HW9.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0);
@@ -32,7 +33,7 @@ function Clock() {
 
 
     return (
-        <div>
+        <div className={styles.clockWrapper}>
             <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
@@ -47,7 +48,7 @@ function Clock() {
             )}
 
             <SuperButton onClick={start}>start</SuperButton>
-            <SuperButton onClick={stop}>stop</SuperButton>
+            <SuperButton onClick={stop} red>stop</SuperButton>
 
         </div>
     );

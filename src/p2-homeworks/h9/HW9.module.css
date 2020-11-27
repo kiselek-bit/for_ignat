@@ -1,0 +1,10 @@
+.wrapper {
+    background-color: #282C34;
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.clockWrapper {
+    color: #61DAFB;
+}

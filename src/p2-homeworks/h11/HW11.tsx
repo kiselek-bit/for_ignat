@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useCallback, useState} from "react";
 import SuperRange from "./common/c7-SuperRange/SuperRange";
 import SuperDoubleRange from "./common/c8-SuperDoubleRange/SuperDoubleRange";
 
@@ -6,10 +6,10 @@ function HW11() {
     const [value1, setValue1] = useState(0);
     const [value2, setValue2] = useState(100);
 
-    const onChangeRange = (newValue: [number, number]) => {
+    const onChangeRange = useCallback((newValue: [number, number]) => {
         setValue1(newValue[0])
         setValue2(newValue[1])
-    }
+    }, [])
 
     return (
         <div>
@@ -24,7 +24,6 @@ function HW11() {
                     value={value1}
                     // сделать так чтоб value1 изменялось
                 />
-                <span>{value2}</span>
             </div>
 
             <div>

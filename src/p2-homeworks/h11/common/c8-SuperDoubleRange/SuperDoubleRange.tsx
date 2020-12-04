@@ -7,7 +7,7 @@ type SuperDoubleRangePropsType = {
     // min, max, step, disable, ...
 }
 
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
+const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = React.memo((
     {
         onChangeRange, value,
         // min, max, step, disable, ...
@@ -27,6 +27,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
             />
         </>
     );
-}
+})
 
 export default SuperDoubleRange;
